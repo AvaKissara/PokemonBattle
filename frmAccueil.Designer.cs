@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.txtDisplay = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // txtDisplay
+            // 
+            this.txtDisplay.Location = new System.Drawing.Point(419, 142);
+            this.txtDisplay.Multiline = true;
+            this.txtDisplay.Name = "txtDisplay";
+            this.txtDisplay.Size = new System.Drawing.Size(248, 221);
+            this.txtDisplay.TabIndex = 0;
+            // 
+            // frmAccueil
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtDisplay);
+            this.Name = "frmAccueil";
             this.Text = "frmAccueil";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private TextBox txtDisplay;
     }
 }

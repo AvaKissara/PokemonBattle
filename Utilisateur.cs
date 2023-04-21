@@ -9,9 +9,9 @@ namespace PokemonBattle
     public class Utilisateur
     {
         private int idUtilisateur;
-        public int GetId()
+        public int IdUtilisateur
         {
-            return idUtilisateur;
+            get { return idUtilisateur; }
         }
         private string nomUtilisateur;
         public string NomUtilisateur
@@ -32,6 +32,6 @@ namespace PokemonBattle
         {
             get { return pseudo; }
             set { pseudo = value; }
-        }
+        }       
     }
 }

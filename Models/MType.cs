@@ -9,6 +9,10 @@ namespace PokemonBattle.Models
     public class MType
     {
         private int idType;
+        public int IDType 
+        {
+            get { return idType; }
+        }
         public int GetId()
         {
             return idType;

@@ -9,9 +9,9 @@ namespace PokemonBattle.Models
     public class MPokemon
     {
         private int idPokemon;
-        public int GetId()
+        public int IDPokemon 
         {
-            return idPokemon;
+            get { return idPokemon; }
         }
         private string nomPokemon;
         public string NomPokemon

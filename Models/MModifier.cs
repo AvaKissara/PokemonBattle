@@ -9,9 +9,9 @@ namespace PokemonBattle.Models
     public class MModifier
     {
         private int idModifier;
-        public int GetId()
-        {
-            return idModifier;
+        public int IDModifier 
+        { 
+            get { return idModifier;} 
         }
         private string nomModifier;
         public string NomModifier

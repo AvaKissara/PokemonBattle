@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PokemonBattle.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,19 @@ namespace PokemonBattle
         public frmAccueil()
         {
             InitializeComponent();
+
+            RepoUser dataUser = new RepoUser();
+            List<Utilisateur> utilisateurs = dataUser.listerUtilisateurDeJson("dataUser");
+
+
+
+            // Parcourir la liste des utilisateurnes et les ajouter à la TextBox
+            foreach (Utilisateur utilisateur in utilisateurs)
+            {
+                txtDisplay.AppendText($"Nom: {utilisateur.NomUtilisateur} {Environment.NewLine}");
+                txtDisplay.AppendText($"Prénom: {utilisateur.PrenomUtilisateur} {Environment.NewLine}");
+                txtDisplay.AppendText($"Pseudo: {utilisateur.Pseudo} {Environment.NewLine}");
+            }
         }
     }
 }

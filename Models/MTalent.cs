@@ -9,6 +9,10 @@ namespace PokemonBattle.Models
     public class MTalent
     {
         private int idTalent;
+        public int IdTalent
+        {
+            get { return idTalent; }
+        }
         public int GetId()
         {
             return idTalent;

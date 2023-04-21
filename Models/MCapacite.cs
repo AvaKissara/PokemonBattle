@@ -9,9 +9,9 @@ namespace PokemonBattle.Models
     public class MCapacite
     {
         private int idCapacite;
-        public int GetId()
+        public int IdCapacite
         {
-            return idCapacite;
+            get { return idCapacite; } 
         }
         private string nomCapacite;
         public string NomCapacite
