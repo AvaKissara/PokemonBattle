@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualBasic.ApplicationServices;
 using Newtonsoft.Json;
+using PokemonBattle.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;

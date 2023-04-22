@@ -1,4 +1,5 @@
-﻿using PokemonBattle.Repositories;
+﻿using PokemonBattle.Models;
+using PokemonBattle.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

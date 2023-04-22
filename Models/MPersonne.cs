@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PokemonBattle
+namespace PokemonBattle.Models
 {
-    public class MPersonne
+    abstract public class MPersonne
     {
         protected int idPersonne;
         public int IdPersonne
@@ -17,7 +17,7 @@ namespace PokemonBattle
         public string NomPersonne
         {
             get { return nomPersonne; }
-            set { nomPersonne = value; }
+            set { nomPersonne = value.Trim().ToUpper(); }
         }
 
         protected string prenomPersonne;
@@ -27,11 +27,11 @@ namespace PokemonBattle
             set { prenomPersonne = value; }
         }
 
-        private string pseudo;
+        protected string pseudo;
         public string Pseudo
         {
             get { return pseudo; }
             set { pseudo = value; }
-        }       
+        }
     }
 }
