@@ -16,7 +16,6 @@ namespace PokemonBattle
     {
         RepoUtilisateur dataUtilisateur;
         List<MUtilisateur> utilisateurs;
-        MUtilisateur lUtilisateur;
 
         public frmConnexion()
         {
@@ -28,14 +27,22 @@ namespace PokemonBattle
 
         private void btnValider_Click(object sender, EventArgs e)
         {
+            MUtilisateur unUtilisateur;
             if(utilisateurs.Any(utilisateur => utilisateur.Pseudo == textBoxPseudo.Text) && utilisateurs.Any(utilisateur => utilisateur.MotDePasse == textBoxMdP.Text))
             { 
-                this.Close();
+                unUtilisateur = utilisateurs.Find(utilisateur => utilisateur.Pseudo == textBoxPseudo.Text);
+                frmPokedexAccueil session = new frmPokedexAccueil(unUtilisateur);
+                session.ShowDialog();
             }
             else
             {
                 MessageBox.Show("NON");
             }
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
