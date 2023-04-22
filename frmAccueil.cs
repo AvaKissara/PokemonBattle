@@ -18,15 +18,15 @@ namespace PokemonBattle
             InitializeComponent();
 
             RepoUser dataUser = new RepoUser();
-            List<Utilisateur> utilisateurs = dataUser.listerUtilisateurDeJson("dataUser");
+            List<MPersonne> personnes = dataUser.listerPersonneDeJson("dataUser");
 
 
 
             // Parcourir la liste des utilisateurnes et les ajouter à la TextBox
-            foreach (Utilisateur utilisateur in utilisateurs)
+            foreach (MPersonne utilisateur in personnes)
             {
-                txtDisplay.AppendText($"Nom: {utilisateur.NomUtilisateur} {Environment.NewLine}");
-                txtDisplay.AppendText($"Prénom: {utilisateur.PrenomUtilisateur} {Environment.NewLine}");
+                txtDisplay.AppendText($"Nom: {utilisateur.NomPersonne} {Environment.NewLine}");
+                txtDisplay.AppendText($"Prénom: {utilisateur.PrenomPersonne} {Environment.NewLine}");
                 txtDisplay.AppendText($"Pseudo: {utilisateur.Pseudo} {Environment.NewLine}");
             }
         }

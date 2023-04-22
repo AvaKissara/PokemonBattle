@@ -1,14 +1,14 @@
 [
   {
-    "idUtilisateur": 1,
-    "nomUtilisateur": "Robespierre",
-    "prenomUtilisateur": "Maximilien",
+    "idPersonne": 1,
+    "nomPersonne": "Robespierre",
+    "prenomPersonne": "Maximilien",
     "pseudo": "RMax"
   },
   {
-    "idUtilisateur": 2,
-    "nomUtilisateur": "Mahuet",
-    "prenomUtilisateur": "Agathe",
+    "idPersonne": 2,
+    "nomPersonne": "Mahuet",
+    "prenomPersonne": "Agathe",
     "pseudo": "MyWay"
   }
 ]
