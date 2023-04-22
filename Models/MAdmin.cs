@@ -11,9 +11,9 @@ namespace PokemonBattle.Models
         private string motDePasse;
 
         // Constructeur par défaut
-        public MAdmin() : base()
+        public MAdmin(int unIdAdmin, string unNomAdmin, string unPrenomAdmin, string unPseudoAdmin, string MotDePasse) : base(unIdAdmin, unNomAdmin, unPrenomAdmin, unPseudoAdmin)
         {
-            motDePasse = "";
+            this.motDePasse = MotDePasse;
         }
         // Propriété publique pour accéder à l'attribut motDePasse en lecture seule
         public string MotDePasse

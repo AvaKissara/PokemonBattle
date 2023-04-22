@@ -1,3 +1,5 @@
+using PokemonBattle.Models;
+
 namespace PokemonBattle
 {
     internal static class Program

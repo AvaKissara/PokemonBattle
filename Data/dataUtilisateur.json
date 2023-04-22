@@ -1,0 +1,30 @@
+[
+  {
+    "MotDePasse": "123456",
+    "IdPersonne": 1,
+    "NomPersonne": "ROBESPIERRE",
+    "PrenomPersonne": "Maximilien",
+    "Pseudo": "RMax"
+  },
+  {
+    "MotDePasse": "azerty",
+    "IdPersonne": 2,
+    "NomPersonne": "MAHUET",
+    "PrenomPersonne": "Agathe",
+    "Pseudo": "MyWay"
+  },
+  {
+    "MotDePasse": "azerty",
+    "IdPersonne": 3,
+    "NomPersonne": "KUJO",
+    "PrenomPersonne": "Jotaro",
+    "Pseudo": "Jojo"
+  },
+  {
+    "MotDePasse": "azerty",
+    "IdPersonne": 4,
+    "NomPersonne": "DOUIS",
+    "PrenomPersonne": "Jonathan",
+    "Pseudo": "Mon chat"
+  }
+]

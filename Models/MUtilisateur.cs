@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,17 +7,15 @@ using System.Threading.Tasks;
 
 namespace PokemonBattle.Models
 {
-    public class MUtilisateurs : MPersonne
+    public class MUtilisateur : MPersonne
     {
         private string motDePasse;
 
-        // Constructeur par défaut
-        public MUtilisateurs() : base()
+        public MUtilisateur(int unIdUtilisateur, string unNomUtilisateur, string unPrenomUtilisateur, string unPseudoUtilisateur, string MotDePasse) : base(unIdUtilisateur, unNomUtilisateur, unPrenomUtilisateur, unPseudoUtilisateur)
         {
-            motDePasse = "";
+            this.motDePasse = MotDePasse;
         }
 
-        // Propriété publique pour accéder à l'attribut motDePasse en lecture seule
         public string MotDePasse
         {
             get { return motDePasse; }

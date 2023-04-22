@@ -14,22 +14,41 @@ namespace PokemonBattle
 {
     public partial class frmAccueil : Form
     {
+        RepoUtilisateur dataUtilisateur;
+        List<MUtilisateur> utilisateurs;
+
         public frmAccueil()
         {
             InitializeComponent();
 
-            RepoUser dataUser = new RepoUser();
-            List<MPersonne> personnes = dataUser.listerPersonneDeJson("dataUser");
+            dataUtilisateur = new RepoUtilisateur();
+            utilisateurs = dataUtilisateur.listerUtilisateurDeJson("dataUtilisateur");
+       
 
 
+       
+            //// Parcourir la liste des utilisateurnes et les ajouter à la TextBox
+            //foreach (MUtilisateur utilisateur in utilisateurs)
+            //{
+            //    textBoxTest.AppendText($"Nom: {utilisateur.NomPersonne} {Environment.NewLine}");
+            //    textBoxTest.AppendText($"Prénom: {utilisateur.PrenomPersonne} {Environment.NewLine}");
+            //    textBoxTest.AppendText($"Pseudo: {utilisateur.Pseudo} {Environment.NewLine}");
+            //    textBoxTest.AppendText($"Mot de passe: {utilisateur.MotDePasse} {Environment.NewLine}");
+            //}
 
-            // Parcourir la liste des utilisateurnes et les ajouter à la TextBox
-            foreach (MPersonne utilisateur in personnes)
-            {
-                txtDisplay.AppendText($"Nom: {utilisateur.NomPersonne} {Environment.NewLine}");
-                txtDisplay.AppendText($"Prénom: {utilisateur.PrenomPersonne} {Environment.NewLine}");
-                txtDisplay.AppendText($"Pseudo: {utilisateur.Pseudo} {Environment.NewLine}");
-            }
+
+        }
+
+        private void btnInscription_Click(object sender, EventArgs e)
+        {
+            frmInscription inscription= new frmInscription();
+            inscription.ShowDialog();
+        }
+
+        private void btnConnexion_Click(object sender, EventArgs e)
+        {
+            frmConnexion connexion= new frmConnexion();
+            connexion.ShowDialog();
         }
     }
 }
