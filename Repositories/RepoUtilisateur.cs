@@ -12,14 +12,14 @@ namespace PokemonBattle.Repositories
 {
     public class RepoUtilisateur
     {
-        public List<MUtilisateur> listerUtilisateurDeJson(string filePath)
+        public List<MUtilisateur> listerUtilisateurDeJson(string chemin)
         {
             string json = File.ReadAllText(@"C:\Users\AvaKissara\source\repos\PokemonBattle\Data\dataUtilisateur.json");
             List<MUtilisateur> utilisateurs = JsonConvert.DeserializeObject<List<MUtilisateur>>(json);
             return utilisateurs;
         }
 
-        public void ecrireJson<Type>(string filePath, Type data)
+        public void ecrireUtilisateurJson<Type>(string chemin, Type data)
         {
             string jsonData = JsonConvert.SerializeObject(data, Formatting.Indented);
             File.WriteAllText(@"C:\Users\AvaKissara\source\repos\PokemonBattle\Data\dataUtilisateur.json", jsonData);

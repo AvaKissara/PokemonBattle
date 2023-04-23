@@ -16,6 +16,8 @@ namespace PokemonBattle
     {
         RepoUtilisateur dataUtilisateur;
         List<MUtilisateur> utilisateurs;
+        RepoAdmin dataAdmin;
+        List<MAdmin> admins;
 
         public frmConnexion()
         {
@@ -23,21 +25,39 @@ namespace PokemonBattle
 
             dataUtilisateur = new RepoUtilisateur();
             utilisateurs = dataUtilisateur.listerUtilisateurDeJson("dataUtilisateur");
+            dataAdmin= new RepoAdmin();
+            admins = dataAdmin.listerAdminDeJson("dataAdmin");
         }
 
         private void btnValider_Click(object sender, EventArgs e)
         {
             MUtilisateur unUtilisateur;
+            MAdmin unAdmin;
             if(utilisateurs.Any(utilisateur => utilisateur.Pseudo == textBoxPseudo.Text) && utilisateurs.Any(utilisateur => utilisateur.MotDePasse == textBoxMdP.Text))
             { 
                 unUtilisateur = utilisateurs.Find(utilisateur => utilisateur.Pseudo == textBoxPseudo.Text);
-                frmPokedexAccueil session = new frmPokedexAccueil(unUtilisateur);
-                session.ShowDialog();
+
+                this.Hide();
+                frmPokedexAccueil sessionUtilisateur = new frmPokedexAccueil(unUtilisateur);
+                sessionUtilisateur.FormClosed += (s, args) => this.Show();
+                sessionUtilisateur.ShowDialog();
+            }
+            else if(admins.Any(admin => admin.Pseudo == textBoxPseudo.Text) && admins.Any(admin => admin.MotDePasse == textBoxMdP.Text))
+            {
+                unAdmin = admins.Find(admin => admin.Pseudo == textBoxPseudo.Text);
+
+
+                this.Hide(); 
+                frmPokedexAccueil sessionAdmin = new frmPokedexAccueil(unAdmin);
+                sessionAdmin.FormClosed += (s, args) => this.Show();
+
+                sessionAdmin.ShowDialog();
             }
             else
             {
-                MessageBox.Show("NON");
+                MessageBox.Show("NON!");
             }
+           
         }
 
         private void btnAnnuler_Click(object sender, EventArgs e)
