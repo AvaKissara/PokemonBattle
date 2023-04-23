@@ -19,7 +19,7 @@ namespace PokemonBattle
         {
             InitializeComponent();
 
-            //Gestion des boutons du CRUD du Pokedex en fonction des droits de la personne connectée
+            //Gestion des boutons pour le CRUD du Pokedex en fonction des droits de la personne connectée
             if (unePersonne is MUtilisateur)
             {
                 btnAjouterPokedex.Enabled = false;
@@ -86,6 +86,14 @@ namespace PokemonBattle
         private void btnFermerPokedex_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAjouterPokedex_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAjoutPokemon ajoutPokemon= new frmAjoutPokemon();
+            ajoutPokemon.Closed += (s, args) => this.Show();
+            ajoutPokemon.ShowDialog();  
         }
     }
 }

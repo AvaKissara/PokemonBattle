@@ -48,7 +48,7 @@ namespace PokemonBattle
 
         private void btnAnnuler_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult = DialogResult.Cancel;
         }
     }
 }
