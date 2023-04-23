@@ -19,6 +19,26 @@ namespace PokemonBattle
         {
             InitializeComponent();
 
+            //Gestion des boutons du CRUD du Pokedex en fonction des droits de la personne connectée
+            if (unePersonne is MUtilisateur)
+            {
+                btnAjouterPokedex.Enabled = false;
+                btnAjouterPokedex.Visible = false;
+                btnModifierPokedex.Enabled = false;
+                btnModifierPokedex.Visible = false;
+                btnSupprimerPokedex.Enabled = false;
+                btnSupprimerPokedex.Visible = false;
+            }
+            else
+            {
+                btnAjouterPokedex.Enabled = true;
+                btnAjouterPokedex.Visible = true;
+                btnModifierPokedex.Enabled = true;
+                btnModifierPokedex.Visible = true;
+                btnSupprimerPokedex.Enabled = true;
+                btnSupprimerPokedex.Visible = true;
+            }
+
             afficherPokemon();
 
         }
