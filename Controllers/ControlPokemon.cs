@@ -26,18 +26,21 @@ namespace PokemonBattle.Controllers
             DataRow row;
 
             dtPokemon = new DataTable();
-            dtPokemon.Columns.Add("imgPokemon", typeof(Image));
-            dtPokemon.Columns.Add("nomPokemon", typeof(string));
-            dtPokemon.Columns.Add("numPokemon", typeof(string));
-            dtPokemon.Columns.Add("niveau", typeof(int));
-            dtPokemon.Columns.Add("pv", typeof(int));
-            dtPokemon.Columns.Add("attaque", typeof(int));
-            dtPokemon.Columns.Add("defense", typeof(int));
-            dtPokemon.Columns.Add("attSpe", typeof(int));
-            dtPokemon.Columns.Add("defSpe", typeof(int));
-            dtPokemon.Columns.Add("vitesse", typeof(int));
-            dtPokemon.Columns.Add("iv", typeof(int));
-            dtPokemon.Columns.Add("nature", typeof(string));
+            dtPokemon.Columns.Add("Pokemon", typeof(Image));
+            dtPokemon.Columns.Add("Nom", typeof(string));
+            dtPokemon.Columns.Add("Num", typeof(string));
+            dtPokemon.Columns.Add("Niveau", typeof(int));
+            dtPokemon.Columns.Add("PV", typeof(int));
+            dtPokemon.Columns.Add("Attaque", typeof(int));
+            dtPokemon.Columns.Add("Defense", typeof(int));
+            dtPokemon.Columns.Add("AttSpe", typeof(int));
+            dtPokemon.Columns.Add("DefSpe", typeof(int));
+            dtPokemon.Columns.Add("Vitesse", typeof(int));
+            dtPokemon.Columns.Add("IV", typeof(int));
+            dtPokemon.Columns.Add("Nature", typeof(string));
+            dtPokemon.Columns[0].ColumnName= "Pokemon";
+            dtPokemon.Columns[1].ColumnName = "Nom";
+
 
 
 

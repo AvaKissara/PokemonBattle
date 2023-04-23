@@ -31,14 +31,41 @@ namespace PokemonBattle
         }
         private void dataGridViewPokemon_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (dataGridViewPokedex.Columns[e.ColumnIndex].Name == "imgPokemon")
+            if (dataGridViewPokedex.Columns[e.ColumnIndex].Name == "Pokemon")
             {
                 if (e.Value != null)
                 {
                     e.FormattingApplied = true;
-                    dataGridViewPokedex.Columns[e.ColumnIndex].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                    dataGridViewPokedex.Columns[e.ColumnIndex].Width = 100;                
+                }
+
+                
+            }
+            else if(dataGridViewPokedex.Columns[e.ColumnIndex].Name == "Nom")
+            {
+                if (e.Value != null)
+                {
+                    e.FormattingApplied = true;
+                    dataGridViewPokedex.Columns[e.ColumnIndex].Width = 67;
                 }
             }
+            else if (dataGridViewPokedex.Columns[e.ColumnIndex].Name != null)
+            {
+                if (e.Value != null) 
+                {
+                    e.Value = e.Value.ToString();
+                    e.FormattingApplied = true;
+                    dataGridViewPokedex.Columns[e.ColumnIndex].Width = 48;
+                }
+              
+            }
+            dataGridViewPokedex.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            dataGridViewPokedex.RowTemplate.Height = 100;
+        }
+
+        private void btnFermerPokedex_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
