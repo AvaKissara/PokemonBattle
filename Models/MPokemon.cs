@@ -13,6 +13,12 @@ namespace PokemonBattle.Models
         {
             get { return idPokemon; }
         }
+        private string cheminImgPokemon;
+        public string CheminImgPokemon 
+        { 
+            get { return cheminImgPokemon; }
+            set { cheminImgPokemon = value; }
+        }
         private string nomPokemon;
         public string NomPokemon
         {
@@ -80,5 +86,21 @@ namespace PokemonBattle.Models
             set { nature = value; }
         }
 
+        public MPokemon(int IdPokemon, string CheminImgPokemon, string NomPokemon, string NumPokemon, int Niveau, int PV, int Attaque, int Defense, int AttSpe, int DefSpe, int Vitesse, int IV, string Nature)
+        {
+            this.idPokemon = IdPokemon;
+            this.cheminImgPokemon = CheminImgPokemon;
+            this.nomPokemon= NomPokemon;
+            this.NumPokemon= NumPokemon;
+            this.niveau= Niveau;
+            this.PV= PV;
+            this.Attaque= Attaque;
+            this.Defense= Defense;
+            this.attSpe= AttSpe;
+            this.defSpe= DefSpe;
+            this.vitesse= Vitesse;
+            this.iv = IV;
+            this.nature = Nature;
+        }
     }
 }

@@ -1,0 +1,65 @@
+[  
+    {    
+        "idPokemon": 1,  
+        "cheminImgPokemon": "C:\\Users\\AvaKissara\\source\\repos\\PokemonBattle\\Img\\pikachuPic.png",  
+        "nomPokemon": "Pikachu",    
+        "numPokemon": "025",    
+        "niveau": 100,    
+        "pv": 320,    
+        "attaque": 230,    
+        "defense": 180,    
+        "attSpe": 230,    
+        "defSpe": 180,    
+        "vitesse": 280,    
+        "iv": 31,    
+        "nature": "Jovial"
+    },
+
+    {    
+        "idPokemon": 2,    
+        "cheminImgPokemon": "C:\\Users\\AvaKissara\\source\\repos\\PokemonBattle\\Img\\salamechePic.png",  
+        "nomPokemon": "Salamèche",    
+        "numPokemon": "004",    
+        "niveau": 100,    
+        "pv": 318,    
+        "attaque": 217,    
+        "defense": 186,    
+        "attSpe": 284,    
+        "defSpe": 194,    
+        "vitesse": 228,    
+        "iv": 31,    
+        "nature": "Hardi"  
+    },  
+
+    {   
+        "idPokemon": 3,  
+        "cheminImgPokemon": "C:\\Users\\AvaKissara\\source\\repos\\PokemonBattle\\Img\\bulbizarrePic.png",    
+        "nomPokemon": "Bulbizarre",    
+        "numPokemon": "001",    
+        "niveau": 100,    
+        "pv": 318,    
+        "attaque": 216,    
+        "defense": 200,    
+        "attSpe": 238,    
+        "defSpe": 200,    
+        "vitesse": 198,    
+        "iv": 31,    
+        "nature": "Assuré"  
+    },  
+    
+    {    
+        "idPokemon": 4,   
+        "cheminImgPokemon": "C:\\Users\\AvaKissara\\source\\repos\\PokemonBattle\\Img\\carapucePic.png",   
+        "nomPokemon": "Carapuce",    
+        "numPokemon": "007",    
+        "niveau": 100,    
+        "pv": 324,    
+        "attaque": 178,    
+        "defense": 276,    
+        "attSpe": 194,    
+        "defSpe": 236,    
+        "vitesse": 184,    
+        "iv": 31,    
+        "nature": "Malin"  
+    }
+]
