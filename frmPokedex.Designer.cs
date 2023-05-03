@@ -66,7 +66,7 @@
             this.dataGridViewPokedex.RowTemplate.Height = 25;
             this.dataGridViewPokedex.Size = new System.Drawing.Size(708, 334);
             this.dataGridViewPokedex.TabIndex = 0;
-            this.dataGridViewPokedex.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridViewPokemon_CellFormatting);
+            this.dataGridViewPokedex.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridViewPokedex_CellFormatting);
             // 
             // btnAjouterPokedex
             // 

@@ -26,7 +26,7 @@ namespace PokemonBattle
         }
         private void btnValiderAjoutP_Click(object sender, EventArgs e)
         {
-            //MPokemon unPokemon = new MPokemon(pokemons.Count +1, )
+            //MPokemon unPokemon = new MPokemon(pokemons.Count +1, textBoxChImg, )
         }
         private void btnAnnulerAjoutP_Click(object sender, EventArgs e)
         {

@@ -49,7 +49,7 @@ namespace PokemonBattle
             this.dataGridViewPokedex.Refresh();
 
         }
-        private void dataGridViewPokemon_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        private void dataGridViewPokedex_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             if (dataGridViewPokedex.Columns[e.ColumnIndex].Name == "Pokemon")
             {

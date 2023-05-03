@@ -35,29 +35,34 @@
             this.lblNumPokemon = new System.Windows.Forms.Label();
             this.lblNiveauPokemon = new System.Windows.Forms.Label();
             this.textBoxChImg = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.textBoxNomP = new System.Windows.Forms.TextBox();
+            this.textBoxPrenomP = new System.Windows.Forms.TextBox();
+            this.textBoxNiv = new System.Windows.Forms.TextBox();
+            this.trackBarAtt = new System.Windows.Forms.TrackBar();
             this.lblAtq = new System.Windows.Forms.Label();
             this.lblDef = new System.Windows.Forms.Label();
             this.lblAtqSpe = new System.Windows.Forms.Label();
             this.lblDefSpe = new System.Windows.Forms.Label();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
-            this.trackBar4 = new System.Windows.Forms.TrackBar();
-            this.trackBar5 = new System.Windows.Forms.TrackBar();
+            this.trackBarDef = new System.Windows.Forms.TrackBar();
+            this.trackBarAttSpe = new System.Windows.Forms.TrackBar();
+            this.trackBarDefSpe = new System.Windows.Forms.TrackBar();
+            this.trackBarVit = new System.Windows.Forms.TrackBar();
             this.lblVit = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
+            this.textBoxAttIv = new System.Windows.Forms.TextBox();
+            this.textBoxDefIv = new System.Windows.Forms.TextBox();
+            this.textBoxAttSpeIv = new System.Windows.Forms.TextBox();
+            this.textBoxDefSpeIv = new System.Windows.Forms.TextBox();
+            this.textBoxVitIv = new System.Windows.Forms.TextBox();
+            this.textBoxVitEv = new System.Windows.Forms.TextBox();
+            this.textBoxDefSpeEv = new System.Windows.Forms.TextBox();
+            this.textBoxAttSpe = new System.Windows.Forms.TextBox();
+            this.textBoxDefEv = new System.Windows.Forms.TextBox();
+            this.textBoxAttIEv = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarAtt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarDef)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarAttSpe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarDefSpe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarVit)).BeginInit();
             this.SuspendLayout();
             // 
             // btnValiderAjoutP
@@ -83,7 +88,7 @@
             // lbCheminImg
             // 
             this.lbCheminImg.AutoSize = true;
-            this.lbCheminImg.Location = new System.Drawing.Point(70, 130);
+            this.lbCheminImg.Location = new System.Drawing.Point(42, 130);
             this.lbCheminImg.Name = "lbCheminImg";
             this.lbCheminImg.Size = new System.Drawing.Size(107, 15);
             this.lbCheminImg.TabIndex = 2;
@@ -92,7 +97,7 @@
             // lblNomPokemon
             // 
             this.lblNomPokemon.AutoSize = true;
-            this.lblNomPokemon.Location = new System.Drawing.Point(70, 175);
+            this.lblNomPokemon.Location = new System.Drawing.Point(42, 175);
             this.lblNomPokemon.Name = "lblNomPokemon";
             this.lblNomPokemon.Size = new System.Drawing.Size(34, 15);
             this.lblNomPokemon.TabIndex = 3;
@@ -101,7 +106,7 @@
             // lblNumPokemon
             // 
             this.lblNumPokemon.AutoSize = true;
-            this.lblNumPokemon.Location = new System.Drawing.Point(70, 221);
+            this.lblNumPokemon.Location = new System.Drawing.Point(42, 221);
             this.lblNumPokemon.Name = "lblNumPokemon";
             this.lblNumPokemon.Size = new System.Drawing.Size(51, 15);
             this.lblNumPokemon.TabIndex = 4;
@@ -110,7 +115,7 @@
             // lblNiveauPokemon
             // 
             this.lblNiveauPokemon.AutoSize = true;
-            this.lblNiveauPokemon.Location = new System.Drawing.Point(70, 267);
+            this.lblNiveauPokemon.Location = new System.Drawing.Point(42, 267);
             this.lblNiveauPokemon.Name = "lblNiveauPokemon";
             this.lblNiveauPokemon.Size = new System.Drawing.Size(44, 15);
             this.lblNiveauPokemon.TabIndex = 5;
@@ -118,44 +123,44 @@
             // 
             // textBoxChImg
             // 
-            this.textBoxChImg.Location = new System.Drawing.Point(197, 123);
+            this.textBoxChImg.Location = new System.Drawing.Point(169, 123);
             this.textBoxChImg.Name = "textBoxChImg";
             this.textBoxChImg.Size = new System.Drawing.Size(197, 23);
             this.textBoxChImg.TabIndex = 6;
             // 
-            // textBox2
+            // textBoxNomP
             // 
-            this.textBox2.Location = new System.Drawing.Point(197, 167);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 7;
+            this.textBoxNomP.Location = new System.Drawing.Point(169, 167);
+            this.textBoxNomP.Name = "textBoxNomP";
+            this.textBoxNomP.Size = new System.Drawing.Size(100, 23);
+            this.textBoxNomP.TabIndex = 7;
             // 
-            // textBox3
+            // textBoxPrenomP
             // 
-            this.textBox3.Location = new System.Drawing.Point(197, 213);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 8;
+            this.textBoxPrenomP.Location = new System.Drawing.Point(169, 213);
+            this.textBoxPrenomP.Name = "textBoxPrenomP";
+            this.textBoxPrenomP.Size = new System.Drawing.Size(100, 23);
+            this.textBoxPrenomP.TabIndex = 8;
             // 
-            // textBox4
+            // textBoxNiv
             // 
-            this.textBox4.Location = new System.Drawing.Point(197, 259);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 9;
+            this.textBoxNiv.Location = new System.Drawing.Point(169, 259);
+            this.textBoxNiv.Name = "textBoxNiv";
+            this.textBoxNiv.Size = new System.Drawing.Size(100, 23);
+            this.textBoxNiv.TabIndex = 9;
             // 
-            // trackBar1
+            // trackBarAtt
             // 
-            this.trackBar1.AutoSize = false;
-            this.trackBar1.Location = new System.Drawing.Point(502, 120);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(174, 30);
-            this.trackBar1.TabIndex = 10;
+            this.trackBarAtt.AutoSize = false;
+            this.trackBarAtt.Location = new System.Drawing.Point(532, 120);
+            this.trackBarAtt.Name = "trackBarAtt";
+            this.trackBarAtt.Size = new System.Drawing.Size(174, 30);
+            this.trackBarAtt.TabIndex = 10;
             // 
             // lblAtq
             // 
             this.lblAtq.AutoSize = true;
-            this.lblAtq.Location = new System.Drawing.Point(434, 126);
+            this.lblAtq.Location = new System.Drawing.Point(406, 126);
             this.lblAtq.Name = "lblAtq";
             this.lblAtq.Size = new System.Drawing.Size(49, 15);
             this.lblAtq.TabIndex = 11;
@@ -164,7 +169,7 @@
             // lblDef
             // 
             this.lblDef.AutoSize = true;
-            this.lblDef.Location = new System.Drawing.Point(434, 172);
+            this.lblDef.Location = new System.Drawing.Point(406, 172);
             this.lblDef.Name = "lblDef";
             this.lblDef.Size = new System.Drawing.Size(49, 15);
             this.lblDef.TabIndex = 12;
@@ -173,7 +178,7 @@
             // lblAtqSpe
             // 
             this.lblAtqSpe.AutoSize = true;
-            this.lblAtqSpe.Location = new System.Drawing.Point(434, 218);
+            this.lblAtqSpe.Location = new System.Drawing.Point(406, 218);
             this.lblAtqSpe.Name = "lblAtqSpe";
             this.lblAtqSpe.Size = new System.Drawing.Size(48, 15);
             this.lblAtqSpe.TabIndex = 13;
@@ -182,111 +187,151 @@
             // lblDefSpe
             // 
             this.lblDefSpe.AutoSize = true;
-            this.lblDefSpe.Location = new System.Drawing.Point(434, 259);
+            this.lblDefSpe.Location = new System.Drawing.Point(406, 259);
             this.lblDefSpe.Name = "lblDefSpe";
             this.lblDefSpe.Size = new System.Drawing.Size(47, 15);
             this.lblDefSpe.TabIndex = 14;
             this.lblDefSpe.Text = "Def Spe";
             // 
-            // trackBar2
+            // trackBarDef
             // 
-            this.trackBar2.AutoSize = false;
-            this.trackBar2.Location = new System.Drawing.Point(502, 164);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(174, 34);
-            this.trackBar2.TabIndex = 15;
+            this.trackBarDef.AutoSize = false;
+            this.trackBarDef.Location = new System.Drawing.Point(532, 164);
+            this.trackBarDef.Name = "trackBarDef";
+            this.trackBarDef.Size = new System.Drawing.Size(174, 34);
+            this.trackBarDef.TabIndex = 15;
             // 
-            // trackBar3
+            // trackBarAttSpe
             // 
-            this.trackBar3.AutoSize = false;
-            this.trackBar3.Location = new System.Drawing.Point(502, 210);
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(174, 29);
-            this.trackBar3.TabIndex = 16;
+            this.trackBarAttSpe.AutoSize = false;
+            this.trackBarAttSpe.Location = new System.Drawing.Point(532, 210);
+            this.trackBarAttSpe.Name = "trackBarAttSpe";
+            this.trackBarAttSpe.Size = new System.Drawing.Size(174, 29);
+            this.trackBarAttSpe.TabIndex = 16;
             // 
-            // trackBar4
+            // trackBarDefSpe
             // 
-            this.trackBar4.AutoSize = false;
-            this.trackBar4.Location = new System.Drawing.Point(502, 255);
-            this.trackBar4.Name = "trackBar4";
-            this.trackBar4.Size = new System.Drawing.Size(174, 33);
-            this.trackBar4.TabIndex = 17;
+            this.trackBarDefSpe.AutoSize = false;
+            this.trackBarDefSpe.Location = new System.Drawing.Point(532, 255);
+            this.trackBarDefSpe.Name = "trackBarDefSpe";
+            this.trackBarDefSpe.Size = new System.Drawing.Size(174, 33);
+            this.trackBarDefSpe.TabIndex = 17;
             // 
-            // trackBar5
+            // trackBarVit
             // 
-            this.trackBar5.AutoSize = false;
-            this.trackBar5.Location = new System.Drawing.Point(502, 298);
-            this.trackBar5.Name = "trackBar5";
-            this.trackBar5.Size = new System.Drawing.Size(174, 31);
-            this.trackBar5.TabIndex = 18;
+            this.trackBarVit.AutoSize = false;
+            this.trackBarVit.Location = new System.Drawing.Point(532, 298);
+            this.trackBarVit.Name = "trackBarVit";
+            this.trackBarVit.Size = new System.Drawing.Size(174, 31);
+            this.trackBarVit.TabIndex = 18;
             // 
             // lblVit
             // 
             this.lblVit.AutoSize = true;
-            this.lblVit.Location = new System.Drawing.Point(434, 298);
+            this.lblVit.Location = new System.Drawing.Point(406, 298);
             this.lblVit.Name = "lblVit";
             this.lblVit.Size = new System.Drawing.Size(43, 15);
             this.lblVit.TabIndex = 19;
             this.lblVit.Text = "Vitesse";
             // 
-            // textBox5
+            // textBoxAttIv
             // 
-            this.textBox5.Location = new System.Drawing.Point(691, 118);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(44, 23);
-            this.textBox5.TabIndex = 20;
+            this.textBoxAttIv.Location = new System.Drawing.Point(721, 118);
+            this.textBoxAttIv.Name = "textBoxAttIv";
+            this.textBoxAttIv.Size = new System.Drawing.Size(44, 23);
+            this.textBoxAttIv.TabIndex = 20;
             // 
-            // textBox6
+            // textBoxDefIv
             // 
-            this.textBox6.Location = new System.Drawing.Point(691, 162);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(44, 23);
-            this.textBox6.TabIndex = 21;
+            this.textBoxDefIv.Location = new System.Drawing.Point(721, 162);
+            this.textBoxDefIv.Name = "textBoxDefIv";
+            this.textBoxDefIv.Size = new System.Drawing.Size(44, 23);
+            this.textBoxDefIv.TabIndex = 21;
             // 
-            // textBox7
+            // textBoxAttSpeIv
             // 
-            this.textBox7.Location = new System.Drawing.Point(691, 209);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(44, 23);
-            this.textBox7.TabIndex = 22;
+            this.textBoxAttSpeIv.Location = new System.Drawing.Point(721, 209);
+            this.textBoxAttSpeIv.Name = "textBoxAttSpeIv";
+            this.textBoxAttSpeIv.Size = new System.Drawing.Size(44, 23);
+            this.textBoxAttSpeIv.TabIndex = 22;
             // 
-            // textBox8
+            // textBoxDefSpeIv
             // 
-            this.textBox8.Location = new System.Drawing.Point(691, 251);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(44, 23);
-            this.textBox8.TabIndex = 23;
+            this.textBoxDefSpeIv.Location = new System.Drawing.Point(721, 251);
+            this.textBoxDefSpeIv.Name = "textBoxDefSpeIv";
+            this.textBoxDefSpeIv.Size = new System.Drawing.Size(44, 23);
+            this.textBoxDefSpeIv.TabIndex = 23;
             // 
-            // textBox9
+            // textBoxVitIv
             // 
-            this.textBox9.Location = new System.Drawing.Point(691, 295);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(44, 23);
-            this.textBox9.TabIndex = 24;
+            this.textBoxVitIv.Location = new System.Drawing.Point(721, 295);
+            this.textBoxVitIv.Name = "textBoxVitIv";
+            this.textBoxVitIv.Size = new System.Drawing.Size(44, 23);
+            this.textBoxVitIv.TabIndex = 24;
+            // 
+            // textBoxVitEv
+            // 
+            this.textBoxVitEv.Location = new System.Drawing.Point(474, 295);
+            this.textBoxVitEv.Name = "textBoxVitEv";
+            this.textBoxVitEv.Size = new System.Drawing.Size(44, 23);
+            this.textBoxVitEv.TabIndex = 29;
+            // 
+            // textBoxDefSpeEv
+            // 
+            this.textBoxDefSpeEv.Location = new System.Drawing.Point(474, 251);
+            this.textBoxDefSpeEv.Name = "textBoxDefSpeEv";
+            this.textBoxDefSpeEv.Size = new System.Drawing.Size(44, 23);
+            this.textBoxDefSpeEv.TabIndex = 28;
+            // 
+            // textBoxAttSpe
+            // 
+            this.textBoxAttSpe.Location = new System.Drawing.Point(474, 209);
+            this.textBoxAttSpe.Name = "textBoxAttSpe";
+            this.textBoxAttSpe.Size = new System.Drawing.Size(44, 23);
+            this.textBoxAttSpe.TabIndex = 27;
+            // 
+            // textBoxDefEv
+            // 
+            this.textBoxDefEv.Location = new System.Drawing.Point(474, 162);
+            this.textBoxDefEv.Name = "textBoxDefEv";
+            this.textBoxDefEv.Size = new System.Drawing.Size(44, 23);
+            this.textBoxDefEv.TabIndex = 26;
+            // 
+            // textBoxAttIEv
+            // 
+            this.textBoxAttIEv.Location = new System.Drawing.Point(474, 118);
+            this.textBoxAttIEv.Name = "textBoxAttIEv";
+            this.textBoxAttIEv.Size = new System.Drawing.Size(44, 23);
+            this.textBoxAttIEv.TabIndex = 25;
             // 
             // frmAjoutPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBoxVitEv);
+            this.Controls.Add(this.textBoxDefSpeEv);
+            this.Controls.Add(this.textBoxAttSpe);
+            this.Controls.Add(this.textBoxDefEv);
+            this.Controls.Add(this.textBoxAttIEv);
+            this.Controls.Add(this.textBoxVitIv);
+            this.Controls.Add(this.textBoxDefSpeIv);
+            this.Controls.Add(this.textBoxAttSpeIv);
+            this.Controls.Add(this.textBoxDefIv);
+            this.Controls.Add(this.textBoxAttIv);
             this.Controls.Add(this.lblVit);
-            this.Controls.Add(this.trackBar5);
-            this.Controls.Add(this.trackBar4);
-            this.Controls.Add(this.trackBar3);
-            this.Controls.Add(this.trackBar2);
+            this.Controls.Add(this.trackBarVit);
+            this.Controls.Add(this.trackBarDefSpe);
+            this.Controls.Add(this.trackBarAttSpe);
+            this.Controls.Add(this.trackBarDef);
             this.Controls.Add(this.lblDefSpe);
             this.Controls.Add(this.lblAtqSpe);
             this.Controls.Add(this.lblDef);
             this.Controls.Add(this.lblAtq);
-            this.Controls.Add(this.trackBar1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.trackBarAtt);
+            this.Controls.Add(this.textBoxNiv);
+            this.Controls.Add(this.textBoxPrenomP);
+            this.Controls.Add(this.textBoxNomP);
             this.Controls.Add(this.textBoxChImg);
             this.Controls.Add(this.lblNiveauPokemon);
             this.Controls.Add(this.lblNumPokemon);
@@ -296,11 +341,11 @@
             this.Controls.Add(this.btnValiderAjoutP);
             this.Name = "frmAjoutPokemon";
             this.Text = "Ajouter un Pokémon au Pokedex";
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarAtt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarDef)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarAttSpe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarDefSpe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarVit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,23 +360,28 @@
         private Label lblNumPokemon;
         private Label lblNiveauPokemon;
         private TextBox textBoxChImg;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TrackBar trackBar1;
+        private TextBox textBoxNomP;
+        private TextBox textBoxPrenomP;
+        private TextBox textBoxNiv;
+        private TrackBar trackBarAtt;
         private Label lblAtq;
         private Label lblDef;
         private Label lblAtqSpe;
         private Label lblDefSpe;
-        private TrackBar trackBar2;
-        private TrackBar trackBar3;
-        private TrackBar trackBar4;
-        private TrackBar trackBar5;
+        private TrackBar trackBarDef;
+        private TrackBar trackBarAttSpe;
+        private TrackBar trackBarDefSpe;
+        private TrackBar trackBarVit;
         private Label lblVit;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
+        private TextBox textBoxAttIv;
+        private TextBox textBoxDefIv;
+        private TextBox textBoxAttSpeIv;
+        private TextBox textBoxDefSpeIv;
+        private TextBox textBoxVitIv;
+        private TextBox textBoxVitEv;
+        private TextBox textBoxDefSpeEv;
+        private TextBox textBoxAttSpe;
+        private TextBox textBoxDefEv;
+        private TextBox textBoxAttIEv;
     }
 }

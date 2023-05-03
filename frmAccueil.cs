@@ -1,4 +1,5 @@
-﻿using PokemonBattle.Models;
+﻿using PokemonBattle.Controllers;
+using PokemonBattle.Models;
 using PokemonBattle.Repositories;
 using System;
 using System.Collections.Generic;
@@ -23,10 +24,10 @@ namespace PokemonBattle
 
             dataUtilisateur = new RepoUtilisateur();
             utilisateurs = dataUtilisateur.listerUtilisateurDeJson("dataUtilisateur");
-       
 
 
-       
+
+
             //// Parcourir la liste des utilisateurnes et les ajouter à la TextBox
             //foreach (MUtilisateur utilisateur in utilisateurs)
             //{
@@ -36,7 +37,45 @@ namespace PokemonBattle
             //    textBoxTest.AppendText($"Mot de passe: {utilisateur.MotDePasse} {Environment.NewLine}");
             //}
 
+            afficherPokedex();
+        }
+        public void afficherPokedex()
+        {
+            this.dataGridViewPokedex.DataSource = ControlPokemon.formerListePokedex();
+            this.dataGridViewPokedex.Refresh();
 
+        }
+
+        private void dataGridViewPokedex_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dataGridViewPokedex.Columns[e.ColumnIndex].Name == "Pokedex")
+            {
+                if (e.Value != null)
+                {
+                    e.FormattingApplied = true;
+                    dataGridViewPokedex.Columns[e.ColumnIndex].Width = 100;
+                }
+            }
+            else if (dataGridViewPokedex.Columns[e.ColumnIndex].Name == "NomPokedex")
+            {
+                if (e.Value != null)
+                {
+                    e.FormattingApplied = true;
+                    dataGridViewPokedex.Columns[e.ColumnIndex].Width = 67;
+                }
+            }
+            else if (dataGridViewPokedex.Columns[e.ColumnIndex].Name != null)
+            {
+                if (e.Value != null)
+                {
+                    e.Value = e.Value.ToString();
+                    e.FormattingApplied = true;
+                    dataGridViewPokedex.Columns[e.ColumnIndex].Width = 48;
+                }
+
+            }
+            dataGridViewPokedex.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            dataGridViewPokedex.RowTemplate.Height = 100;
         }
 
         private void btnInscription_Click(object sender, EventArgs e)

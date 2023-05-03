@@ -49,24 +49,11 @@ namespace PokemonBattle.Models
             get { return ev; }
             set { ev = value; }
         }
-        private int pvBase;
-        public int PvBase
-        {
-            get { return pvBase; }
-            set { pvBase = value; }
-        }
         private int pv;
-        public int PV
+        public int Pv
         {
             get { return pv; }
-            set 
-            { pv = value; }
-        }
-        private int attaqueBase;
-        public int AttaqueBase
-        {
-            get { return attaqueBase; }
-            set { attaqueBase = value; }
+            set { pv = value; }
         }
         private int attaque;
         public int Attaque
@@ -74,23 +61,11 @@ namespace PokemonBattle.Models
             get { return attaque; }
             set { attaque = value; }
         }
-        private int defenseBase;
-        public int DefenseBase
-        {
-            get { return defenseBase; }
-            set { defenseBase = value; }
-        }
         private int defense;
         public int Defense
         {
             get { return defense; }
             set { defense = value; }
-        }
-        private int attSpeBase;
-        public int AttSpeBase
-        {
-            get { return attSpeBase; }
-            set { attSpeBase = value; }
         }
         private int attSpe;
         public int AttSpe
@@ -98,23 +73,11 @@ namespace PokemonBattle.Models
             get { return attSpe; }
             set { attSpe = value; }
         }
-        private int defSpeBase;
-        public int DefSpeBase
-        {
-            get { return defSpeBase; }
-            set { defSpeBase = value; }
-        }
         private int defSpe;
         public int DefSpe
         {
             get { return defSpe; }
             set { defSpe = value; }
-        }
-        private int vitesseBase;
-        public int VitesseBase
-        {
-            get { return vitesseBase; }
-            set { vitesseBase = value; }
         }
         private int vitesse;
         public int Vitesse
@@ -129,7 +92,7 @@ namespace PokemonBattle.Models
             set { nature = value; }
         }
 
-        public MPokemon(int IdPokemon, string CheminImgPokemon, string NomPokemon, string NumPokemon, int Niveau, int IV, int EV, int PVBase, int AttaqueBase, int DefenseBase, int AttSpeBase, int DefSpeBase, int VitesseBase, string Nature)
+        public MPokemon(int IdPokemon, string CheminImgPokemon, string NomPokemon, string NumPokemon, int Niveau, int IV, int EV, int PV, int Attaque, int Defense, int AttSpe, int DefSpe, int Vitesse, string Nature)
         {
             this.idPokemon = IdPokemon;
             this.cheminImgPokemon = CheminImgPokemon;
@@ -138,47 +101,23 @@ namespace PokemonBattle.Models
             this.niveau = Niveau;
             this.iv = IV;
             this.ev = EV;
-            this.pvBase = PVBase;
-            this.attaqueBase = AttaqueBase;
-            this.defenseBase = DefenseBase;
-            this.attSpeBase = AttSpeBase;
-            this.defSpeBase = DefSpeBase;
-            this.vitesseBase = VitesseBase;
+            this.pv = PV;
+            this.attaque = Attaque;
+            this.defense = Defense;
+            this.attSpe = AttSpe;
+            this.defSpe = DefSpe;
+            this.vitesse = Vitesse;
             this.nature = Nature;
         }
 
-        //public MPokemon(int IdPokemon, string CheminImgPokemon, string NomPokemon, string NumPokemon, int Niveau, int IV, int EV, int PVBase, int PV, int AttaqueBase, int Attaque, int DefenseBase, int Defense, int AttSpeBase, int AttSpe, int DefSpeBase, int DefSpe, int VitesseBase, int Vitesse, string Nature)
-        //{
-        //    this.idPokemon = IdPokemon;
-        //    this.cheminImgPokemon = CheminImgPokemon;
-        //    this.nomPokemon= NomPokemon;
-        //    this.NumPokemon= NumPokemon;
-        //    this.niveau= Niveau;
-        //    this.iv = IV;
-        //    this.ev = EV;
-        //    this.pvBase = PVBase;
-        //    this.pv= PV;
-        //    this.attaqueBase= AttaqueBase;
-        //    this.attaque = Attaque;
-        //    this.defenseBase= DefenseBase;
-        //    this.defense = Defense;
-        //    this.attSpeBase= AttSpeBase;
-        //    this.attSpe = AttSpe;
-        //    this.defSpeBase= DefSpeBase;
-        //    this.defSpe = DefSpe;
-        //    this.vitesseBase= VitesseBase;
-        //    this.vitesse = Vitesse;
-        //    this.nature = Nature;
-        //}
-
         public void calculStat(MPokemon unPokemon)
         {
-            unPokemon.PvBase = ((IV + (2 * PvBase) + (EV / 4)) * Niveau / 100) + Niveau + 10;
-            unPokemon.AttaqueBase = ((IV + 2 * AttaqueBase + (EV / 4) * Niveau / 100) + 5);
-            unPokemon.DefenseBase = ((IV + 2 * DefenseBase + (EV / 4) * Niveau / 100) + 5);
-            unPokemon.AttSpeBase = ((IV + 2 * AttSpeBase + (EV / 4) * Niveau / 100) + 5);
-            unPokemon.DefSpeBase = ((IV + 2 * DefSpeBase + (EV / 4) * Niveau / 100) + 5);
-            unPokemon.VitesseBase = ((IV + 2 * VitesseBase + (EV / 4) * Niveau / 100) + 5);
+            unPokemon.Pv = ((IV + (2 * Pv) + (EV / 4)) * Niveau / 100) + Niveau + 10;
+            unPokemon.Attaque = ((IV + 2 * Attaque + (EV / 4) * Niveau / 100) + 5);
+            unPokemon.Defense = ((IV + 2 * Defense + (EV / 4) * Niveau / 100) + 5);
+            unPokemon.AttSpe = ((IV + 2 * AttSpe + (EV / 4) * Niveau / 100) + 5);
+            unPokemon.DefSpe = ((IV + 2 * DefSpe + (EV / 4) * Niveau / 100) + 5);
+            unPokemon.Vitesse = ((IV + 2 * Vitesse + (EV / 4) * Niveau / 100) + 5);
         }
     }
 }
