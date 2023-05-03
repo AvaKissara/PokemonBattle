@@ -12,7 +12,7 @@ namespace PokemonBattle.Repositories
     {
         public List<MAdmin> listerAdminDeJson(string chemin)
         {
-            string jsonAdmin = File.ReadAllText(@"C:\Users\AvaKissara\source\repos\PokemonBattle\Data\dataAdmin.json");
+            string jsonAdmin = File.ReadAllText(@"C:\Users\Lila Badi\Documents\GitHub\AvaKissara\PokemonBattle\Data\dataAdmin.json");
             List<MAdmin> admins = JsonConvert.DeserializeObject<List<MAdmin>>(jsonAdmin);
             return admins;
         }
@@ -20,7 +20,7 @@ namespace PokemonBattle.Repositories
         public void ecrireAdminJson<Type>(string chemin, Type data) 
         {
             string jsonData = JsonConvert.SerializeObject(data, Formatting.Indented);
-            File.WriteAllText(@"C:\Users\AvaKissara\source\repos\PokemonBattle\Repositories\RepoAdmin.cs", jsonData);
+            File.WriteAllText(@"C:\Users\Lila Badi\Documents\GitHub\AvaKissara\PokemonBattle\Data\dataAdmin.json", jsonData);
         }
     }
 }

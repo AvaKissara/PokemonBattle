@@ -46,18 +46,19 @@ namespace PokemonBattle.Controllers
 
             foreach (MPokemon pokemon in pokemons)
             {
+                pokemon.calculStat(pokemon);
                 Image imgPokemon = Image.FromFile(@pokemon.CheminImgPokemon);
                 row = dtPokemon.NewRow();
                 row[0] = imgPokemon;
                 row[1] = pokemon.NomPokemon;
                 row[2] = pokemon.NumPokemon;
                 row[3] = pokemon.Niveau;
-                row[4] = pokemon.PV;
-                row[5] = pokemon.Attaque;
-                row[6] = pokemon.Defense;
-                row[7] = pokemon.AttSpe;
-                row[8] = pokemon.DefSpe;
-                row[9] = pokemon.Vitesse;
+                row[4] = pokemon.PvBase;
+                row[5] = pokemon.AttaqueBase;
+                row[6] = pokemon.DefenseBase;
+                row[7] = pokemon.AttSpeBase;
+                row[8] = pokemon.DefSpeBase;
+                row[9] = pokemon.VitesseBase;
                 row[10] = pokemon.IV;
                 row[11] = pokemon.Nature;
 

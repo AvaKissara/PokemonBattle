@@ -14,7 +14,7 @@ namespace PokemonBattle.Repositories
     {
         public List<MUtilisateur> listerUtilisateurDeJson(string chemin)
         {
-            string json = File.ReadAllText(@"C:\Users\AvaKissara\source\repos\PokemonBattle\Data\dataUtilisateur.json");
+            string json = File.ReadAllText(@"C:\Users\Lila Badi\Documents\GitHub\AvaKissara\PokemonBattle\Data\dataUtilisateur.json");
             List<MUtilisateur> utilisateurs = JsonConvert.DeserializeObject<List<MUtilisateur>>(json);
             return utilisateurs;
         }
@@ -22,7 +22,7 @@ namespace PokemonBattle.Repositories
         public void ecrireUtilisateurJson<Type>(string chemin, Type data)
         {
             string jsonData = JsonConvert.SerializeObject(data, Formatting.Indented);
-            File.WriteAllText(@"C:\Users\AvaKissara\source\repos\PokemonBattle\Data\dataUtilisateur.json", jsonData);
+            File.WriteAllText(@"C:\Users\Lila Badi\Documents\GitHub\AvaKissara\PokemonBattle\Data\dataUtilisateur.json", jsonData);
         }
     }
 }

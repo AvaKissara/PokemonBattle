@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PokemonBattle.Models;
+using PokemonBattle.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +14,23 @@ namespace PokemonBattle
 {
     public partial class frmAjoutPokemon : Form
     {
+        RepoPokemon dataPokemon;
+        List<MPokemon> pokemons;
+
         public frmAjoutPokemon()
         {
             InitializeComponent();
-        }
 
+            dataPokemon = new RepoPokemon();
+            pokemons = dataPokemon.listerPokemonDeJson("dataPokemon");
+        }
+        private void btnValiderAjoutP_Click(object sender, EventArgs e)
+        {
+            //MPokemon unPokemon = new MPokemon(pokemons.Count +1, )
+        }
         private void btnAnnulerAjoutP_Click(object sender, EventArgs e)
         {
-            DialogResult= DialogResult.Cancel;
+            DialogResult = DialogResult.Cancel;
         }
     }
 }

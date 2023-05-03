@@ -12,7 +12,7 @@ namespace PokemonBattle.Repositories
     {
         public List<MPokemon> listerPokemonDeJson(string chemin)
         {
-            string jsonPokemon = File.ReadAllText(@"C:\Users\AvaKissara\source\repos\PokemonBattle\Data\dataPokemon.json");
+            string jsonPokemon = File.ReadAllText(@"C:\Users\Lila Badi\Documents\GitHub\AvaKissara\PokemonBattle\Data\dataPokemon.json");
             List<MPokemon> pokemons = JsonConvert.DeserializeObject<List<MPokemon>>(jsonPokemon);
             return pokemons;
         }

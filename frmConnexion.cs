@@ -46,7 +46,6 @@ namespace PokemonBattle
             {
                 unAdmin = admins.Find(admin => admin.Pseudo == textBoxPseudo.Text);
 
-
                 this.Hide(); 
                 frmPokedexAccueil sessionAdmin = new frmPokedexAccueil(unAdmin);
                 sessionAdmin.FormClosed += (s, args) => this.Show();

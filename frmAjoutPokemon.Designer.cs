@@ -34,7 +34,7 @@
             this.lblNomPokemon = new System.Windows.Forms.Label();
             this.lblNumPokemon = new System.Windows.Forms.Label();
             this.lblNiveauPokemon = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxChImg = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -68,6 +68,7 @@
             this.btnValiderAjoutP.TabIndex = 0;
             this.btnValiderAjoutP.Text = "Valider";
             this.btnValiderAjoutP.UseVisualStyleBackColor = true;
+            this.btnValiderAjoutP.Click += new System.EventHandler(this.btnValiderAjoutP_Click);
             // 
             // btnAnnulerAjoutP
             // 
@@ -115,12 +116,12 @@
             this.lblNiveauPokemon.TabIndex = 5;
             this.lblNiveauPokemon.Text = "Niveau";
             // 
-            // textBox1
+            // textBoxChImg
             // 
-            this.textBox1.Location = new System.Drawing.Point(197, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 23);
-            this.textBox1.TabIndex = 6;
+            this.textBoxChImg.Location = new System.Drawing.Point(197, 123);
+            this.textBoxChImg.Name = "textBoxChImg";
+            this.textBoxChImg.Size = new System.Drawing.Size(197, 23);
+            this.textBoxChImg.TabIndex = 6;
             // 
             // textBox2
             // 
@@ -286,7 +287,7 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxChImg);
             this.Controls.Add(this.lblNiveauPokemon);
             this.Controls.Add(this.lblNumPokemon);
             this.Controls.Add(this.lblNomPokemon);
@@ -313,7 +314,7 @@
         private Label lblNomPokemon;
         private Label lblNumPokemon;
         private Label lblNiveauPokemon;
-        private TextBox textBox1;
+        private TextBox textBoxChImg;
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
