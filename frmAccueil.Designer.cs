@@ -31,12 +31,13 @@
             this.btnConnexion = new System.Windows.Forms.Button();
             this.btnInscription = new System.Windows.Forms.Button();
             this.dataGridViewPokedex = new System.Windows.Forms.DataGridView();
+            this.lblWelcome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPokedex)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConnexion
             // 
-            this.btnConnexion.Location = new System.Drawing.Point(638, 183);
+            this.btnConnexion.Location = new System.Drawing.Point(261, 388);
             this.btnConnexion.Name = "btnConnexion";
             this.btnConnexion.Size = new System.Drawing.Size(119, 33);
             this.btnConnexion.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // btnInscription
             // 
-            this.btnInscription.Location = new System.Drawing.Point(638, 265);
+            this.btnInscription.Location = new System.Drawing.Point(386, 388);
             this.btnInscription.Name = "btnInscription";
             this.btnInscription.Size = new System.Drawing.Size(119, 33);
             this.btnInscription.TabIndex = 1;
@@ -59,19 +60,29 @@
             this.dataGridViewPokedex.AllowUserToAddRows = false;
             this.dataGridViewPokedex.AllowUserToDeleteRows = false;
             this.dataGridViewPokedex.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPokedex.Location = new System.Drawing.Point(23, 76);
+            this.dataGridViewPokedex.Location = new System.Drawing.Point(51, 75);
             this.dataGridViewPokedex.Name = "dataGridViewPokedex";
             this.dataGridViewPokedex.ReadOnly = true;
             this.dataGridViewPokedex.RowTemplate.Height = 25;
-            this.dataGridViewPokedex.Size = new System.Drawing.Size(585, 305);
+            this.dataGridViewPokedex.Size = new System.Drawing.Size(709, 281);
             this.dataGridViewPokedex.TabIndex = 2;
             this.dataGridViewPokedex.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridViewPokedex_CellFormatting);
+            // 
+            // lblWelcome
+            // 
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Location = new System.Drawing.Point(305, 31);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(102, 15);
+            this.lblWelcome.TabIndex = 3;
+            this.lblWelcome.Text = "Bonjour Dresseurs";
             // 
             // frmAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.dataGridViewPokedex);
             this.Controls.Add(this.btnInscription);
             this.Controls.Add(this.btnConnexion);
@@ -79,6 +90,7 @@
             this.Text = "frmAccueil";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPokedex)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -87,5 +99,6 @@
         private Button btnConnexion;
         private Button btnInscription;
         private DataGridView dataGridViewPokedex;
+        private Label lblWelcome;
     }
 }

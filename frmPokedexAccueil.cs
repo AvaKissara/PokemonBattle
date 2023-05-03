@@ -27,11 +27,13 @@ namespace PokemonBattle
             {
                 menuUtilisateurs.Enabled = false;
                 menuUtilisateurs.Visible= false;
+                menuPokedex.Text = "Mes Equipes";
             }
             else
             {
                 menuUtilisateurs.Enabled = true;
                 menuUtilisateurs.Visible = true;
+                menuPokedex.Text = "Pokedex";
             }
         }
 

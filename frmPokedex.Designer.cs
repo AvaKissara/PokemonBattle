@@ -31,9 +31,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewPokedex = new System.Windows.Forms.DataGridView();
-            this.btnAjouterPokedex = new System.Windows.Forms.Button();
-            this.btnModifierPokedex = new System.Windows.Forms.Button();
-            this.btnSupprimerPokedex = new System.Windows.Forms.Button();
+            this.btnAjouterP = new System.Windows.Forms.Button();
+            this.btnModifierP = new System.Windows.Forms.Button();
+            this.btnSupprimerP = new System.Windows.Forms.Button();
             this.btnFermerPokedex = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPokedex)).BeginInit();
             this.SuspendLayout();
@@ -60,48 +60,48 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewPokedex.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewPokedex.Location = new System.Drawing.Point(60, 64);
+            this.dataGridViewPokedex.Location = new System.Drawing.Point(71, 49);
             this.dataGridViewPokedex.Name = "dataGridViewPokedex";
             this.dataGridViewPokedex.ReadOnly = true;
             this.dataGridViewPokedex.RowTemplate.Height = 25;
-            this.dataGridViewPokedex.Size = new System.Drawing.Size(708, 334);
+            this.dataGridViewPokedex.Size = new System.Drawing.Size(684, 349);
             this.dataGridViewPokedex.TabIndex = 0;
             this.dataGridViewPokedex.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridViewPokedex_CellFormatting);
             // 
-            // btnAjouterPokedex
+            // btnAjouterP
             // 
-            this.btnAjouterPokedex.AutoSize = true;
-            this.btnAjouterPokedex.Image = global::PokemonBattle.Properties.Resources.add;
-            this.btnAjouterPokedex.Location = new System.Drawing.Point(8, 136);
-            this.btnAjouterPokedex.Name = "btnAjouterPokedex";
-            this.btnAjouterPokedex.Size = new System.Drawing.Size(38, 38);
-            this.btnAjouterPokedex.TabIndex = 1;
-            this.btnAjouterPokedex.UseVisualStyleBackColor = true;
-            this.btnAjouterPokedex.Click += new System.EventHandler(this.btnAjouterPokedex_Click);
+            this.btnAjouterP.AutoSize = true;
+            this.btnAjouterP.Image = global::PokemonBattle.Properties.Resources.add;
+            this.btnAjouterP.Location = new System.Drawing.Point(17, 135);
+            this.btnAjouterP.Name = "btnAjouterP";
+            this.btnAjouterP.Size = new System.Drawing.Size(38, 38);
+            this.btnAjouterP.TabIndex = 1;
+            this.btnAjouterP.UseVisualStyleBackColor = true;
+            this.btnAjouterP.Click += new System.EventHandler(this.btnAjouterPokedex_Click);
             // 
-            // btnModifierPokedex
+            // btnModifierP
             // 
-            this.btnModifierPokedex.AutoSize = true;
-            this.btnModifierPokedex.Image = global::PokemonBattle.Properties.Resources.update;
-            this.btnModifierPokedex.Location = new System.Drawing.Point(8, 198);
-            this.btnModifierPokedex.Name = "btnModifierPokedex";
-            this.btnModifierPokedex.Size = new System.Drawing.Size(38, 38);
-            this.btnModifierPokedex.TabIndex = 2;
-            this.btnModifierPokedex.UseVisualStyleBackColor = true;
+            this.btnModifierP.AutoSize = true;
+            this.btnModifierP.Image = global::PokemonBattle.Properties.Resources.update;
+            this.btnModifierP.Location = new System.Drawing.Point(17, 197);
+            this.btnModifierP.Name = "btnModifierP";
+            this.btnModifierP.Size = new System.Drawing.Size(38, 38);
+            this.btnModifierP.TabIndex = 2;
+            this.btnModifierP.UseVisualStyleBackColor = true;
             // 
-            // btnSupprimerPokedex
+            // btnSupprimerP
             // 
-            this.btnSupprimerPokedex.AutoSize = true;
-            this.btnSupprimerPokedex.Image = global::PokemonBattle.Properties.Resources.cancel;
-            this.btnSupprimerPokedex.Location = new System.Drawing.Point(8, 261);
-            this.btnSupprimerPokedex.Name = "btnSupprimerPokedex";
-            this.btnSupprimerPokedex.Size = new System.Drawing.Size(38, 38);
-            this.btnSupprimerPokedex.TabIndex = 3;
-            this.btnSupprimerPokedex.UseVisualStyleBackColor = true;
+            this.btnSupprimerP.AutoSize = true;
+            this.btnSupprimerP.Image = global::PokemonBattle.Properties.Resources.cancel;
+            this.btnSupprimerP.Location = new System.Drawing.Point(17, 260);
+            this.btnSupprimerP.Name = "btnSupprimerP";
+            this.btnSupprimerP.Size = new System.Drawing.Size(38, 38);
+            this.btnSupprimerP.TabIndex = 3;
+            this.btnSupprimerP.UseVisualStyleBackColor = true;
             // 
             // btnFermerPokedex
             // 
-            this.btnFermerPokedex.Location = new System.Drawing.Point(694, 415);
+            this.btnFermerPokedex.Location = new System.Drawing.Point(677, 415);
             this.btnFermerPokedex.Name = "btnFermerPokedex";
             this.btnFermerPokedex.Size = new System.Drawing.Size(75, 23);
             this.btnFermerPokedex.TabIndex = 4;
@@ -115,9 +115,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnFermerPokedex);
-            this.Controls.Add(this.btnSupprimerPokedex);
-            this.Controls.Add(this.btnModifierPokedex);
-            this.Controls.Add(this.btnAjouterPokedex);
+            this.Controls.Add(this.btnSupprimerP);
+            this.Controls.Add(this.btnModifierP);
+            this.Controls.Add(this.btnAjouterP);
             this.Controls.Add(this.dataGridViewPokedex);
             this.Name = "frmPokedex";
             this.Text = "Pokedex";
@@ -130,9 +130,9 @@
         #endregion
 
         private DataGridView dataGridViewPokedex;
-        private Button btnAjouterPokedex;
-        private Button btnModifierPokedex;
-        private Button btnSupprimerPokedex;
+        private Button btnAjouterP;
+        private Button btnModifierP;
+        private Button btnSupprimerP;
         private Button btnFermerPokedex;
     }
 }

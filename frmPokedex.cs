@@ -22,21 +22,21 @@ namespace PokemonBattle
             //Gestion des boutons pour le CRUD du Pokedex en fonction des droits de la personne connectée
             if (unePersonne is MUtilisateur)
             {
-                btnAjouterPokedex.Enabled = false;
-                btnAjouterPokedex.Visible = false;
-                btnModifierPokedex.Enabled = false;
-                btnModifierPokedex.Visible = false;
-                btnSupprimerPokedex.Enabled = false;
-                btnSupprimerPokedex.Visible = false;
+                btnAjouterP.Enabled = false;
+                btnAjouterP.Visible = false;
+                btnModifierP.Enabled = false;
+                btnModifierP.Visible = false;
+                btnSupprimerP.Enabled = false;
+                btnSupprimerP.Visible = false;
             }
             else
             {
-                btnAjouterPokedex.Enabled = true;
-                btnAjouterPokedex.Visible = true;
-                btnModifierPokedex.Enabled = true;
-                btnModifierPokedex.Visible = true;
-                btnSupprimerPokedex.Enabled = true;
-                btnSupprimerPokedex.Visible = true;
+                btnAjouterP.Enabled = true;
+                btnAjouterP.Visible = true;
+                btnModifierP.Enabled = true;
+                btnModifierP.Visible = true;
+                btnSupprimerP.Enabled = true;
+                btnSupprimerP.Visible = true;
             }
 
             afficherPokemon();

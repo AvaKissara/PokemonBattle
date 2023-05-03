@@ -27,16 +27,6 @@ namespace PokemonBattle
 
 
 
-
-            //// Parcourir la liste des utilisateurnes et les ajouter à la TextBox
-            //foreach (MUtilisateur utilisateur in utilisateurs)
-            //{
-            //    textBoxTest.AppendText($"Nom: {utilisateur.NomPersonne} {Environment.NewLine}");
-            //    textBoxTest.AppendText($"Prénom: {utilisateur.PrenomPersonne} {Environment.NewLine}");
-            //    textBoxTest.AppendText($"Pseudo: {utilisateur.Pseudo} {Environment.NewLine}");
-            //    textBoxTest.AppendText($"Mot de passe: {utilisateur.MotDePasse} {Environment.NewLine}");
-            //}
-
             afficherPokedex();
         }
         public void afficherPokedex()
