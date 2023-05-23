@@ -3,6 +3,7 @@ using PokemonBattle.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -22,6 +23,8 @@ namespace PokemonBattle.Controllers
             DataTable dtPokemon;
             dataPokemon = new RepoPokemon();
             pokemons = dataPokemon.listerPokemonDeJson("dataPokemon");
+            RepoCapacite dataCap = new RepoCapacite();
+          
 
             DataRow row;
 
@@ -40,7 +43,6 @@ namespace PokemonBattle.Controllers
             dtPokemon.Columns.Add("Nature", typeof(string));
             dtPokemon.Columns[0].ColumnName= "Pokemon";
             dtPokemon.Columns[1].ColumnName = "Nom";
-
 
 
 
@@ -118,6 +120,39 @@ namespace PokemonBattle.Controllers
             }
 
             return dtPokemon;
+        }
+
+
+        public static DataTable formerListeCapacite()
+        {
+            RepoCapacite dataCapacite;
+            List<MCapacite> capacites;
+            DataTable dtCapacite;
+            dataCapacite = new RepoCapacite();
+            capacites = dataCapacite.listerCapaciteDeJson("dataCapacite");
+
+            DataRow row;
+
+            dtCapacite = new DataTable();
+            dtCapacite.Columns.Add("NomCapacite", typeof(string));
+            dtCapacite.Columns.Add("PP", typeof(int));
+            dtCapacite.Columns.Add("Puissance", typeof(int));
+            dtCapacite.Columns.Add("Pre", typeof(int));
+
+
+
+            foreach (MCapacite cap in capacites)
+            {
+                row = dtCapacite.NewRow();
+                row[0] = cap.NomCapacite;
+                row[1] = cap.PP;
+                row[2] = cap.Puissance;
+                row[3] = cap.Pre;
+            
+                dtCapacite.Rows.Add(row);
+            }
+
+            return dtCapacite;
         }
     }
 }

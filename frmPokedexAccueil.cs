@@ -49,5 +49,14 @@ namespace PokemonBattle
             pokedex.FormClosed += (s, args) => this.Show();
             pokedex.ShowDialog();
         }
+
+        private void menuFight_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmFight fight = new frmFight(this.laPersonne);
+            fight.FormClosed += (s, args) => this.Show();
+            fight.ShowDialog();
+
+        }
     }
 }

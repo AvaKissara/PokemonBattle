@@ -75,6 +75,7 @@
             this.menuFight.Name = "menuFight";
             this.menuFight.Size = new System.Drawing.Size(80, 50);
             this.menuFight.Text = "New fight";
+            this.menuFight.Click += new System.EventHandler(this.menuFight_Click);
             // 
             // menuProfile
             // 

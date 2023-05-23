@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PokemonBattle.Models
 {
@@ -110,6 +111,12 @@ namespace PokemonBattle.Models
             this.nature = Nature;
         }
 
+
+        public MPokemon()
+        {
+
+        }
+
         public void calculStat(MPokemon unPokemon)
         {
             unPokemon.Pv = ((IV + (2 * Pv) + (EV / 4)) * Niveau / 100) + Niveau + 10;
@@ -118,6 +125,11 @@ namespace PokemonBattle.Models
             unPokemon.AttSpe = ((IV + 2 * AttSpe + (EV / 4) * Niveau / 100) + 5);
             unPokemon.DefSpe = ((IV + 2 * DefSpe + (EV / 4) * Niveau / 100) + 5);
             unPokemon.Vitesse = ((IV + 2 * Vitesse + (EV / 4) * Niveau / 100) + 5);
+        }
+
+        public void CalculDegat(int valDegat)
+        {
+           
         }
     }
 }

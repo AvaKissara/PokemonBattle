@@ -1,0 +1,17 @@
+[
+  {
+    "idCapacite": 1,
+    "nomCapacite": "Eclair",
+    "pp": 39,
+    "puissance": 52,
+    "pre": 43
+  },
+
+  {
+    "idCapacite": 2,
+    "nomCapacite": "Danse fleurs",
+    "pp": 10,
+    "puissance": 34,
+    "pre": 70
+  }
+]
