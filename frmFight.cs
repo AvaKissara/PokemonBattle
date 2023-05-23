@@ -21,6 +21,11 @@ namespace PokemonBattle
         RepoCapacite dataCap = new RepoCapacite();
         RepoPokemon dataPokemon = new RepoPokemon();
         List<MPokemon> pokemons;
+
+        MPokemon attaquant;
+        MPokemon defenseur;
+        MCapacite CapaciteTrouvee;
+
         public frmFight(MPersonne unePersonne)
         {
             InitializeComponent();
@@ -49,14 +54,14 @@ namespace PokemonBattle
            
             List<MCapacite> capacites;
             capacites = dataCap.listerCapaciteDeJson("dataCapacite");
-            MCapacite CapaciteTrouvee = capacites.FirstOrDefault(c => c.NomCapacite == nom);
+            CapaciteTrouvee = capacites.FirstOrDefault(c => c.NomCapacite == nom);
             textBoxAtt.Text += CapaciteTrouvee.NomCapacite + "," + Environment.NewLine;
 
+            defenseur.Pv = defenseur.Pv - CapaciteTrouvee.Puissance;
+            textBoxAtt.Text = defenseur.Pv.ToString();
 
-            
 
-            pokemons = dataPokemon.listerPokemonDeJson("dataPokemon");
-           
+
         }
 
         private void btnAddPlayer_Click(object sender, EventArgs e)
@@ -67,9 +72,9 @@ namespace PokemonBattle
             nom = (string)this.dataGridViewPok.CurrentRow.Cells[1].Value;
 
             pokemons = dataPokemon.listerPokemonDeJson("dataPokemon");
-            MPokemon pokemonTrouvee = pokemons.FirstOrDefault(p => p.NomPokemon == nom);
+            attaquant = pokemons.FirstOrDefault(p => p.NomPokemon == nom);
 
-            textBoxAtt.Text += pokemonTrouvee.NomPokemon + "," + Environment.NewLine;
+            textBoxAtt.Text += "Attaquant: " + attaquant.NomPokemon + Environment.NewLine;
 
 
         }
@@ -90,9 +95,9 @@ namespace PokemonBattle
             nom = (string)this.dataGridViewPok.CurrentRow.Cells[1].Value;
 
             pokemons = dataPokemon.listerPokemonDeJson("dataPokemon");
-            MPokemon pokemonTrouvee = pokemons.FirstOrDefault(p => p.NomPokemon == nom);
+            defenseur = pokemons.FirstOrDefault(p => p.NomPokemon == nom);
 
-            textBoxDef.Text += pokemonTrouvee.NomPokemon + "," + Environment.NewLine;
+            textBoxDef.Text += "Défenseur: " + defenseur.NomPokemon + "," + Environment.NewLine;
         }
     }
 }

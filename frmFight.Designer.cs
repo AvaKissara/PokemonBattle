@@ -67,6 +67,7 @@
             // textBoxAtt
             // 
             this.textBoxAtt.Location = new System.Drawing.Point(497, 79);
+            this.textBoxAtt.Multiline = true;
             this.textBoxAtt.Name = "textBoxAtt";
             this.textBoxAtt.Size = new System.Drawing.Size(211, 23);
             this.textBoxAtt.TabIndex = 2;
@@ -95,6 +96,7 @@
             // textBoxDef
             // 
             this.textBoxDef.Location = new System.Drawing.Point(497, 162);
+            this.textBoxDef.Multiline = true;
             this.textBoxDef.Name = "textBoxDef";
             this.textBoxDef.Size = new System.Drawing.Size(211, 23);
             this.textBoxDef.TabIndex = 5;
